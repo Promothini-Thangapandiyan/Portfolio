@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Doorway Reminder System | Promothini T</title>
+    <meta name="description" content="Details about the Smart Doorway Reminder System project by Promothini T.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-color: #bae6fd;
+            --card-bg: #1e293b;
+            --accent-blue: #0284c7;
+            --accent-blue-glow: rgba(2, 132, 199, 0.4);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --glass-border: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #0f172a;
+        }
+
+        .project-page-title,
+        .detail-block h3 {
+            color: #0f172a;
+        }
+
+        .project-page-header {
+            padding: 150px 0 60px;
+            text-align: center;
+        }
+
+        .project-page-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            color: var(--accent-blue);
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .project-hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 24px;
+            margin-bottom: 4rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .project-details-grid {
+            display: grid;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .detail-block h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .detail-block p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .action-container {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-blue);
+        }
+
+        @media (max-width: 768px) {
+            .project-page-title {
+                font-size: 2.2rem;
+            }
+
+            .project-hero-img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">P<span>T</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="project-page-header">
+            <a href="index.html#projects" class="back-link"><i data-lucide="arrow-left" size="20"></i> Back to
+                Portfolio</a>
+            <h1 class="project-page-title Outfit">Smart Doorway Reminder System</h1>
+            <p class="project-tech">Technologies Used: Wokwi Online Simulation</p>
+        </header>
+
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+            alt="Smart Doorway Reminder System" class="project-hero-img">
+
+        <div class="project-details-grid">
+            <div class="detail-block glass">
+                <h3>Problem Statement</h3>
+                <p>In our fast-paced daily routines, people frequently forget essential items like keys, wallets, ID
+                    cards, or medications when leaving their homes. This forgetfulness leads to wasted time, unnecessary
+                    stress, and reduced productivity as individuals are forced to return home to retrieve these items.
+                </p>
+            </div>
+
+            <div class="detail-block glass">
+                <h3>Existing Factors</h3>
+                <p>Currently, most people rely on manual systems like leaving sticky notes on the door, setting phone
+                    alarms, or just memory to ensure they have everything. These methods are prone to failure because
+                    they lack context-awareness—an alarm might go off when you aren't leaving, or a note might be
+                    ignored due to habituation.</p>
+            </div>
+
+            <div class="detail-block glass" style="grid-column: 1 / -1;">
+                <h3>Solution</h3>
+                <p>The Smart Doorway Reminder System uses an IoT-based approach to passively monitor whether essential
+                    items are picked up before a person exits the house. Simulated using Wokwi, the system detects
+                    motion near the doorway and cross-references it with sensor data from item storage locations. If a
+                    user approaches the door without all required items, the system triggers an immediate visual and
+                    auditory alert, ensuring nothing is left behind.</p>
+            </div>
+        </div>
+
+        <div class="action-container">
+            <a href="https://github.com/Promothini-Thangapandiyan/Smart-Doorway-Reminder-System" target="_blank"
+                class="btn-primary"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; padding: 1rem 2rem;">
+                <i data-lucide="github"></i> View on GitHub
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Promothini T. Built with passion & clean code.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
