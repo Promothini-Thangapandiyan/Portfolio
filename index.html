@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promothini T | Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Promothini T, a B.Tech IT student & aspiring Software Engineer.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">P<span>T</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-primary">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-container glass">
+                <div class="hero-image-wrapper">
+                    <img src="profile-pic.jpg" alt="Promothini T" class="hero-image">
+                </div>
+                <div class="hero-content">
+                    <span class="badge"
+                        style="background: rgba(14, 165, 233, 0.1); color: var(--accent-blue); border-color: rgba(14, 165, 233, 0.2);">Available
+                        for opportunities</span>
+                    <h1>Promothini T</h1>
+                    <p class="role">IT Student | Aspiring Software Engineer</p>
+                    <p class="description">I enjoy solving problems and building logical, efficient software solutions.
+                        Passionate about clean code and real-world applications.</p>
+                    <div class="hero-ctas">
+                        <a href="mailto:promothinipromothini39@gmail.com" class="btn-primary">Email Me</a>
+                        <a href="https://github.com/Promothini-Thangapandiyan" target="_blank"
+                            class="btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="card glass">
+                    <p>I am a B.Tech Information Technology student who enjoys solving problems through programming and
+                        logical thinking. I focus on understanding concepts deeply and writing clean, structured code.
+                    </p>
+                    <p>I am a quick learner with strong analytical skills and I aim to grow as a software engineer by
+                        working on real-world challenges and continuously improving my technical abilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span>C</span>
+                            <span>Java</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>AngularJS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass">
+                        <h3>Database & Tools</h3>
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>Figma</span>
+                            <span>Canva</span>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience & Internships</h2>
+
+                <div class="exp-category">
+                    <h3 class="category-title"><i data-lucide="briefcase"></i> Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item glass">
+                            <div class="timeline-header">
+                                <h3>Course Instructor – Abacus</h3>
+                                <span class="date">Present</span>
+                            </div>
+                            <ul>
+                                <li>Trained students in abacus techniques and mental arithmetic</li>
+                                <li>Improved communication and classroom management skills</li>
+                                <li>Guided students to improve calculation speed and accuracy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-category" style="margin-top: 4rem;">
+                    <h3 class="category-title"><i data-lucide="graduation-cap"></i> Internships</h3>
+                    <div class="timeline">
+                        <div class="timeline-item glass has-cert" data-cert="Internship.png">
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Juniper Networking Virtual Intern – Eduskill</h3>
+                                    <span class="date">Internship</span>
+                                </div>
+                                <ul>
+                                    <li>Learned networking fundamentals</li>
+                                    <li>Studied basics of network security</li>
+                                    <li>Understood infrastructure management concepts</li>
+                                </ul>
+                                <div class="timeline-action">
+                                    <button class="btn-secondary small"
+                                        onclick="openCertModal('Internship.png', 'Networking Virtual Intern', 'Juniper | Eduskill')">
+                                        <i data-lucide="external-link" size="14"></i> View Certificate
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Project</h2>
+                <div class="project-card glass" onclick="openModal('project-modal')">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+                        alt="Smart Doorway Reminder System" class="project-card-image">
+                    <div class="project-content">
+                        <h3>Smart Doorway Reminder System</h3>
+                        <p class="short-desc">IoT-based reminder system that alerts users about essential items before
+                            leaving home.</p>
+                        <div class="project-features">
+                            <span>Smart item detection</span>
+                            <span>Reminder alerts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal structure -->
+                <div id="project-modal" class="modal-overlay">
+                    <div class="modal glass half-page">
+                        <button class="modal-close" onclick="closeModal('project-modal')">
+                            <i data-lucide="x"></i>
+                        </button>
+                        <div class="modal-body">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+                                alt="Smart Doorway Reminder System" class="modal-image">
+                            <div class="modal-info">
+                                <h3>Smart Doorway Reminder System</h3>
+                                <p class="tech-stack"><strong>Technologies Used:</strong> Wokwi Online Simulation</p>
+                                <p class="modal-desc">This project is an IoT-based system designed to prevent users from
+                                    forgetting essential items when leaving their homes. It uses sensors to detect if
+                                    key items are in place and provides immediate audio/visual alerts at the doorway if
+                                    anything is missing.</p>
+                                <a href="project.html" class="btn-primary get-more-btn">Get More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="edu-grid">
+                    <div class="edu-card glass">
+                        <h3>B.Tech Information Technology</h3>
+                        <p>K.S. Rangasamy College of Technology</p>
+                        <span class="date">2023 – 2027</span>
+                        <div class="stats">CGPA: 8.32</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section">
+            <div class="container">
+                <h2 class="section-title">Verified Achievements</h2>
+                <div class="certificates-grid">
+                    <div class="cert-card glass"
+                        onclick="openCertModal('Infosys.png', 'Java Developer', 'Infosys Springboard')">
+                        <div class="cert-image-container">
+                            <img src="Infosys.png" alt="Infosys Java Developer Certificate">
+                            <div class="cert-overlay">
+                                <img src="Infosys.png" alt="Preview" class="cert-preview-img">
+                                <span class="view-btn">View Full Certificate</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Java Developer</h3>
+                            <p>Infosys Springboard</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass"
+                        onclick="openCertModal('Oracle.png', 'AI Foundations Associate', 'Oracle')">
+                        <div class="cert-image-container">
+                            <img src="Oracle.png" alt="Oracle AI Foundations Certificate">
+                            <div class="cert-overlay">
+                                <img src="Oracle.png" alt="Preview" class="cert-preview-img">
+                                <span class="view-btn">View Full Certificate</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3>AI Foundations Associate</h3>
+                            <p>Oracle</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass"
+                        onclick="openCertModal('Oracle-DevOps.png', 'Generative AI Professional', 'Oracle')">
+                        <div class="cert-image-container">
+                            <img src="Oracle-DevOps.png" alt="Oracle Generative AI Certificate">
+                            <div class="cert-overlay">
+                                <img src="Oracle-DevOps.png" alt="Preview" class="cert-preview-img">
+                                <span class="view-btn">View Full Certificate</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Generative AI Professional</h3>
+                            <p>Oracle</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate View Modal -->
+        <div id="cert-modal" class="modal-overlay">
+            <div class="modal glass cert-detail-modal">
+                <button class="modal-close" onclick="closeModal('cert-modal')">
+                    <i data-lucide="x"></i>
+                </button>
+                <div class="modal-body cert-modal-body">
+                    <img id="cert-modal-img" src="" alt="Certificate View" class="full-cert-img">
+                    <div class="modal-info">
+                        <h3 id="cert-modal-title">Certificate Title</h3>
+                        <p id="cert-modal-issuer" class="tech-stack">Issuer Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-card glass">
+                    <h2>Let's build something together</h2>
+                    <p>Have a project in mind or just want to say hi?</p>
+                    <div class="contact-links">
+                        <a href="tel:+917708083294" class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>+91 7708083294</span>
+                        </a>
+                        <a href="mailto:promothinipromothini39@gmail.com" class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>promothinipromothini39@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Promothini T. Built with passion & clean code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
